@@ -1,0 +1,75 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/angular_frontend/dist
+/angular_frontend/tmp
+/angular_frontend/out-tsc
+# Only exists if Bazel was run
+/angular_frontend/bazel-out
+
+# dependencies
+/angular_frontend/node_modules
+
+# profiling files
+/angular_frontend/chrome-profiler-events*.json
+/angular_frontend/speed-measure-plugin*.json
+
+# IDEs and editors
+/angular_frontend/.idea
+/angular_frontend/.project
+/angular_frontend/.classpath
+/angular_frontend/.c9/
+/angular_frontend/*.launch
+/angular_frontend/.settings/
+/angular_frontend/*.sublime-workspace
+
+# IDE - VSCode
+/angular_frontend/.vscode/*
+/angular_frontend/!.vscode/settings.json
+/angular_frontend/!.vscode/tasks.json
+/angular_frontend/!.vscode/launch.json
+/angular_frontend/!.vscode/extensions.json
+/angular_frontend/.history/*
+
+# misc
+/angular_frontend/.sass-cache
+/angular_frontend/connect.lock
+/angular_frontend/coverage
+/angular_frontend/libpeerconnection.log
+/angular_frontend/npm-debug.log
+/angular_frontend/yarn-error.log
+/angular_frontend/testem.log
+/angular_frontend/typings
+
+# System Files
+/angular_frontend/.DS_Store
+/angular_frontend/Thumbs.db
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/react_frontend/node_modules
+/react_frontend/.pnp
+/react_frontend/.pnp.js
+
+# testing
+/react_frontend/coverage
+
+# production
+/react_frontend/build
+
+# misc
+/react_frontend/.DS_Store
+/react_frontend/.env.local
+/react_frontend/.env.development.local
+/react_frontend/.env.test.local
+/react_frontend/.env.production.local
+
+/react_frontend/npm-debug.log*
+/react_frontend/yarn-debug.log*
+/react_frontend/yarn-error.log*
+
+
+
+/backend/node_modules

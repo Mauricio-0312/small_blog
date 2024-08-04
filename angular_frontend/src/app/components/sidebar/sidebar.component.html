@@ -1,0 +1,13 @@
+<aside>
+    <div id="createDiv">
+        <h3>Puedes hacer esto</h3>
+        <a [routerLink]="['/create/article']">Crear articulo</a>
+    </div>
+    <div id="searchDiv">
+        <h3>Buscador</h3>
+        <form #searchForm="ngForm" (ngSubmit)="onSubmit()">
+            <input type="text" name="search" id="search" #searchInput="ngModel" [(ngModel)]="search">
+            <input type="submit" value="Buscar" >
+        </form>
+    </div>
+</aside>

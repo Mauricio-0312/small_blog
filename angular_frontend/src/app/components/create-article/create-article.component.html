@@ -1,0 +1,23 @@
+<div id="main">
+    <section id="form">
+        <h2>Formulario</h2>
+        <p *ngIf="status && status == 'success'" class="alert alert-success">Articulo guardado exitosamente</p>
+        <p *ngIf="status && status == 'error'" class="alert alert-danger">No se pudo guardar el articulo</p>
+
+        <form action="#" #createForm="ngForm" (ngSubmit)="onSubmit(createForm)" enctype="multipart/form-data">
+            <label for="title">Titulo:</label>
+            <input type="text" name="title" #title="ngModel" [(ngModel)]="article.title" required>
+            <small *ngIf="!title.valid && title.touched">El titulo es invalido</small>
+
+            <label for="content">Contenido:</label>
+            <textarea name="content" #content="ngModel" [(ngModel)]="article.content" required></textarea>
+            <small *ngIf="!content.valid && content.touched">El contenido es invalido</small>
+
+            <label for="image">Imagen:</label>
+            <input type="file" name="image" (change)="getImage($event)">
+            <img id="articleImage" src="{{url+'image/'+article.image}}" alt="" *ngIf="article.image">
+            <input type="submit" value="Enviar" [disabled]="createForm.invalid">
+        </form>
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

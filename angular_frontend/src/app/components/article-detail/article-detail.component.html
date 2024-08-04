@@ -1,0 +1,11 @@
+<div id="main">
+   <section id="article">
+        <img src="{{url+'image/'+article.image}}" alt="" *ngIf="article.image">
+        <img src="assets/empty-image.jpg" alt="" *ngIf="!article.image">        
+        <h2>{{article.title}}</h2>
+        <p>{{article.content}}</p>
+        <a class="btn btn-warning" [routerLink]="['/update/article/', article._id]">Editar</a>
+        <button class="btn btn-danger" (click)="delete()">Borrar</button>
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

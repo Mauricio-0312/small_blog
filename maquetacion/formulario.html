@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <div><img src="./react.png" alt=""><h1>Curso React</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Formulario</a></li>
+                <li><a href="#">Pagina1</a></li>
+                <li><a href="#">Pagina2</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main">
+        <section id="form">
+            <h2>Formulario</h2>
+            <form action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name">
+
+                <label for="surname">Apellidos:</label>
+                <input type="text" name="surname">
+
+                <label for="description">Descripcion:</label>
+                <textarea name="description"></textarea>
+
+                <label for="gender">Genero:</label>
+                <div><input type="radio" name="gender" value="man">Hombre</div>
+                <div><input type="radio" name="gender" value="woman">Mujer</div>
+                <div><input type="radio" name="gender" value="other">Otro</div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <aside>
+            <div id="createDiv">
+                <h3>Puedes hacer esto</h3>
+                <a href="#">Crear articulo</a>
+            </div>
+            <div id="searchDiv">
+                <h3>Buscador</h3>
+                <form action="#">
+                    <input type="text" name="search" id="search">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
